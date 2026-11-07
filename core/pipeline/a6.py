@@ -283,7 +283,7 @@ def prepare(data, output, zaid):
         targets = read(data / f"disease_targets_{disease_id}.json")
         disease = {"id": targets["disease_id"], "name": targets["disease_name"]}
         sources = A6Sources(data, output / "evidence")
-        experiment = str(uuid5(NAMESPACE_URL, f"oxhack/a6/{disease_id}/{digest(folder / 'network.json')}"))
+        experiment = str(uuid5(NAMESPACE_URL, f"htb/a6/{disease_id}/{digest(folder / 'network.json')}"))
         print(f"Building evidence: {disease_id}", flush=True)
         coverage = {}
         updates, packet = build_evidence_packet(disease, network["shortlist"], targets, drugs,

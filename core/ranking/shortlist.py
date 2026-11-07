@@ -88,7 +88,7 @@ def select_shortlist(payload: dict, settings: ShortlistSettings = ShortlistSetti
     graph = (deepcopy(physical.get("graph")) if settings.method == "physical_rwr" else
              {"graph_version": versions[0] if len(versions) == 1 else None, "graph_versions": versions, "network_kind": "human_physical_gene_undirected_unweighted",
               "manifest": payload.get("provenance", {}).get("stage1_manifest")})
-    return {"format_version": 1, "contract": "oxhack.shortlist.v1", "disease_id": payload["disease"]["id"],
+    return {"format_version": 1, "contract": "htb.shortlist.v1", "disease_id": payload["disease"]["id"],
             "selection_method": settings.method, "configuration": asdict(settings),
             "seed": payload.get("provenance", {}).get("settings", {}).get("seed"),
             "selection_randomness": "none", "graph": graph,

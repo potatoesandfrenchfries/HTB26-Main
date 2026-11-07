@@ -192,7 +192,7 @@ def prepare(data_dir="data", output="data/pilot", *, offline=False):
         ids = [panel["true_drug"]["drug_id"], *[d["drug_id"] for d in panel["decoys"]]]
         coverage = {}
         _, packet = build_evidence_packet(disease, ids, target_set, universe,
-            experiment_id=str(uuid5(NAMESPACE_URL, f"oxhack-pilot/{SEED}/{disease['id']}")),
+            experiment_id=str(uuid5(NAMESPACE_URL, f"htb-pilot/{SEED}/{disease['id']}")),
             shuffle_seed=SEED, sources=sources, coverage=coverage)
         flags = packet_leakage(packet)
         checks.append({"disease_id": disease["id"], "flags": flags, "coverage": coverage})
@@ -417,7 +417,7 @@ def prepare_v2(data_dir="data", output="data/pilot/v2", *, offline=False):
             sources.unmapped.clear()
             packet_coverage = {}
             _, packet = build_evidence_packet(disease, ids, all_targets, universe,
-                experiment_id=str(uuid5(NAMESPACE_URL, f"oxhack-pilot-v2/{SEED}/{disease_id}")),
+                experiment_id=str(uuid5(NAMESPACE_URL, f"htb-pilot-v2/{SEED}/{disease_id}")),
                 shuffle_seed=SEED+index, sources=sources, coverage=packet_coverage)
             flags = packet_leakage(packet)
             if flags:
@@ -744,7 +744,7 @@ def prepare_experiment_b(data_dir='data', output='data/experiment_b', *,
                 sources.unmapped.clear()
                 coverage = {}
                 _, packet = build_evidence_packet(disease, ids, full, universe,
-                    experiment_id=str(uuid5(NAMESPACE_URL, f'oxhack-experiment-b/{B_SEED}/{did}')),
+                    experiment_id=str(uuid5(NAMESPACE_URL, f'htb-experiment-b/{B_SEED}/{did}')),
                     shuffle_seed=B_SEED+index, sources=sources, coverage=coverage)
                 targets_file = output / f'targets-{did}.json'
                 targets_file.write_text(json.dumps(top, indent=2)+'\n')

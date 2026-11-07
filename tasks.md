@@ -169,7 +169,7 @@ Nothing in Phase 3 should start before the HRT proof (WS5) is published.
 - [ ] Two to three minute demo script. `M`, all
 - [ ] Sponsor mapping: how the project meets HRT (prediction and decision), G-Research (making the invisible visible), plus the integrations used (Gemini, Vultr, Tiger Data, Entire). Confirm judging criteria with the sponsors. `S`, C
 - [ ] Update [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for new reused code and data licences (CARD, ChEMBL). `S`, whoever adds the source
-- [ ] Clean stray `oxhack` and "Half Life" references; refresh the README pipeline diagram and "Tasks" section. `S`, C
+- [ ] Clean stray legacy-name and "Half Life" references; refresh the README pipeline diagram and "Tasks" section. `S`, C
 - [ ] Enable Entire in the repo if it is being claimed as a sponsor integration (`entire enable`). `S`
 
 ---

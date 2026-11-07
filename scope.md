@@ -17,7 +17,7 @@ Given a resistant bacterium, profile *why* it is resistant, then rank approved d
 
 ## 3. Reference projects
 
-| | RepoRx (TreeHacks 26) | Half Life (OxHack 26) | Us |
+| | RepoRx (TreeHacks 26) | Half Life (earlier hackathon project) | Us |
 | --- | --- | --- | --- |
 | Method | DiffDock docking + LLM literature agents | Network proximity (RWR on STRING) + LLM jury | Resistance profiling + target/docking + predicted activity + verified constraints |
 | Strength | End-to-end automation | Honest validation | (aim for both) |
@@ -93,7 +93,7 @@ Prizes and challenge names are read from the sponsor slide. Judging criteria sti
 
 Done:
 
-- Half Life code imported and renamed from `oxhack` to `htb`; tree26 scripts imported with declaration (see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)).
+- Half Life code imported as the `htb` packages; tree26 scripts imported with declaration (see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)).
 - `uv` workspace installed, 564 core and 338 API tests passing, web app running.
 - Local Postgres, migrations and the amd64 Vina docking worker running; a real docking job ran end to end.
 - `core/verify/`: Python smoke test and Lean 4 certificate layer built and tested (see WS8).

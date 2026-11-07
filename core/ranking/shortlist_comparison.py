@@ -29,7 +29,7 @@ PHYSICAL_FILTERS = {"combined_score_min": 700, "experiments_min": 400,
 def implementation_contract() -> dict:
     """Contains no cohort/labels. Any algorithm/settings change needs a new seal."""
     root = Path(__file__).parent
-    return {"format_version": 1, "contract": "oxhack.shortlist-comparison-implementation.v1",
+    return {"format_version": 1, "contract": "htb.shortlist-comparison-implementation.v1",
             "code": {p.name: file_record(p) for p in sorted(root.glob("*.py"))},
             "software": {"python": platform.python_version(), "numpy": np.__version__, "scipy": scipy.__version__},
             "settings": {"ranking": asdict(RankingSettings()), "rwr": asdict(RWRSettings()),
