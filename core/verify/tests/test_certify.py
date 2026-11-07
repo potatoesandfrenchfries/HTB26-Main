@@ -4,7 +4,7 @@ from htb_verify import certify
 from htb_verify.certify import ensure_built, generate
 from htb_verify.smoke import check_molecule
 
-from .test_smoke import ASPIRIN, VANCOMYCIN
+from test_smoke import ASPIRIN, VANCOMYCIN
 
 lean = pytest.mark.skipif(not ensure_built(), reason="Lean 4 / lake is not installed or did not build")
 
