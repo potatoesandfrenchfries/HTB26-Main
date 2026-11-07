@@ -313,7 +313,7 @@ Dependencies in brief: WS1 feeds WS2, WS3 and WS4. WS4 needs WS2. WS5 needs WS4.
 - [ ] LLM provider for the jury (WS6).
 - [ ] Whether generation is in scope at all, and which model plus compute (WS7).
 - [ ] Antibiotic rule set: confirm limits and which extra rules to add (WS8).
-- [ ] Wordsmith: in or out.
+- [.] Wordsmith: in or out.
 - [ ] Team roles and the hackathon time budget, to size the stretch goals.
 
 ## 15. Main risks
