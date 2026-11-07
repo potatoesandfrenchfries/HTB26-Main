@@ -201,3 +201,12 @@ Borda points, ranks, contested Candidates and W (0.9) are unchanged.
 This is a design change for future runs only. Historical results retain their
 published schema and frozen combining/scoring rules; they must not be migrated
 or rescored to make them conform to this newer fixture.
+
+## Resistance contracts
+
+`resistance_profile.json`, `antibiotic_candidates.json` and `certificate.json` are the
+antibiotic-resistance contracts, described in [docs/contracts.md](../../docs/contracts.md) and
+checked by `tests/test_resistance_contracts.py`. They use *S. aureus* with `mecA` and a `gyrA` S84L
+variant. CARD terms and ARO IDs are real (release 4.0.2). Descriptors, rule outcomes and Lean results
+come from `core/verify`. Activity values, ranks and the generated molecule are fictional. The files
+above this section belong to the legacy disease flow, hidden by #32.
