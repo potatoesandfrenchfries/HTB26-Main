@@ -12,6 +12,7 @@ members = [
     "htb-api",
     "htb-drug-repurposing",
     "htb-ranking",
+    "htb-resistance",
     "htb-verify",
     "htb-worker",
 ]
@@ -467,6 +468,11 @@ requires-dist = [
     { name = "scipy", specifier = "==1.17.1" },
 ]
 provides-extras = ["benchmark"]
+
+[[package]]
+name = "htb-resistance"
+version = "0.1.0"
+source = { editable = "core/resistance" }
 
 [[package]]
 name = "htb-verify"
